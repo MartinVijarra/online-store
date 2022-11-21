@@ -1,0 +1,76 @@
+.count-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.counter{
+    width: 257px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EDDE5D;
+    border-radius: 6px;
+    margin: 0 25px;
+}
+
+h5{
+    color: #6b6b6b;
+    font-size: 30px;
+}
+
+.operadores{
+    background: transparent;
+    color: #EDDE5D;
+    border: none;
+    font-size: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.operadores:active{
+    color: #f09819;
+}
+
+.operadores:disabled{
+    color: #6b6b6b;
+    cursor: auto;
+}
+
+.btn-agregar:active{
+    border: 2px solid #f09819;
+    background: linear-gradient(0.45turn, #EDDE5D, #f09819);
+}
+
+.btn-agregar {
+    padding: 0 60px;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    color: #000;
+    background: linear-gradient(0.90turn, #EDDE5D, #f09819);
+    border: 2px solid #EDDE5D;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+.btn-agregar:hover {
+    background-color: #23c483;
+    box-shadow: 0px 5px 15px #f0961946;
+    color: #fff;
+    transform: translateY(-4px);
+}
+  
+.btn-agregar:active {
+    transform: translateY(-1px);
+}
+
+.btn-agregar:disabled {
+    color: #6b6b6b;
+    background: transparent;
+    border: 2px solid #6b6b6b;
+    box-shadow: none;
+    cursor: auto;
+    transform: translateX(0);
+}

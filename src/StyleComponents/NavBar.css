@@ -1,16 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body{
-  background-color: #000;
-}
-
 header{
   width: 100%;
 }
@@ -21,14 +8,6 @@ header{
   padding: 10px;
 }
 
-nav{
-  max-width: 1400px;
-  margin: 15px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .border-box{
   border: 10px solid;
   border-image: linear-gradient(0.25turn, #f09819, #EDDE5D) 1;
@@ -36,25 +15,65 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 15px;
+}
+
+nav{
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul{
   display: flex;
 }
 
-li{
+.btn-nav {
+  background: transparent;
+  border: none;
+  color: #6b6b6b;
+  position: relative;
+  transition: .5s ease;
+  padding-bottom: 4px;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
   list-style: none;
   margin: 0 10px;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 22px;
-  color: #6b6b6b;
-  font-weight: 600;
-  transition: 0.3s;
 }
 
-li:hover {
+.btn-nav::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: .5s ease;
+}
+
+.btn-nav:hover {
   background: linear-gradient(0.25turn, #f09819, #EDDE5D);
   background-clip: text;
   color: transparent;
+  transition-delay: .2s;
+}
+
+.btn-nav:hover::before {
+  width: 100%;
+}
+
+.btn-nav::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: .4s ease;
+  z-index: -1;
 }

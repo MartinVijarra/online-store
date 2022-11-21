@@ -1,7 +1,11 @@
-export function ItemListContainer(greeting) {
+// import { ItemList } from './ItemList';
+import { ItemDetail } from './ItemDetail'
+import '../StyleComponents/ItemListContainer.css'
+
+export function ItemListContainer() {
     return (
-        <div>
-            <h4>{greeting.saludo}</h4>
+        <div className='itemlist-container'>
+            <ItemDetail />
         </div>
     )
 }

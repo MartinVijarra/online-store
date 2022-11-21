@@ -1,11 +1,17 @@
+import './App.css'
 import { NavBar } from './Components/NavBar';
 import { ItemListContainer } from './Components/ItemListContainer';
+import { Item } from './Components/Item'
+import { Footer } from './Components/Footer';
+// import { Routes } from 'react-router-dom';
 
-export function Header() {
+export function App() {
     return (
         <>
             <NavBar />
-            <ItemListContainer saludo="Saludo desde Props!"/>
+            <Item />
+            <ItemListContainer />
+            <Footer />
         </>
     )
 }

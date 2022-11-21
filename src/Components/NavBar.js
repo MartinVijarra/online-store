@@ -1,4 +1,5 @@
 import { Carrito } from "./CartWidget"
+import '../StyleComponents/NavBar.css';
 
 export function NavBar() {
     return (
@@ -18,7 +19,7 @@ export function NavBar() {
           </div>
 
           <div className="cart-container">
-            <button className="cart"> {<Carrito />} </button>
+            <button className="cart-btn"> {<Carrito />} </button>
           </div>
         </nav>
       </header> 
