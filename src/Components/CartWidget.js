@@ -1,5 +1,5 @@
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import '../StyleComponents/CartWidget.css';
+import '../Styles/CartWidget.css';
 
 export function Carrito() {
     return(

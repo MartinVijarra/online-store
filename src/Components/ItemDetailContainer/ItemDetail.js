@@ -1,5 +1,5 @@
 import { ItemCount } from './ItemCount';
-import '../StyleComponents/ItemDetail.css'
+import '../Styles/ItemDetail.css'
 
 export function ItemDetail() {
     const products = {

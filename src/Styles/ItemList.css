@@ -1,4 +1,5 @@
-.card-lists{
+.itemlist{
+    max-width: 1400px;
     margin: auto;
     display: flex;
 }

@@ -1,8 +1,10 @@
 import { Item } from "./Item";
-import '../../StyleComponents/ItemList.css'
+import '../../Styles/ItemList.css'
 
 export function ItemList() {
     return(
-            <Item />
+    <div className="itemlist">
+        <Item />
+    </div>
     )
 }

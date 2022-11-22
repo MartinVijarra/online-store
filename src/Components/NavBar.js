@@ -1,5 +1,5 @@
 import { Carrito } from "./CartWidget"
-import '../StyleComponents/NavBar.css';
+import '../Styles/NavBar.css';
 
 export function NavBar() {
     return (
