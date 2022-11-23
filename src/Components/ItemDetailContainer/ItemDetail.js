@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react';
-import { ItemCount } from './ItemCount';
+import { ItemCount} from './ItemCount'
+import { useParams } from 'react-router-dom';
 import { productDetail } from '../Products';
 import '../../Styles/ItemDetail.css'
 
 export function ItemDetail() {
 
+    const params = useParams()
+    
     const [detail, setDetail] = useState(null)
     
     useEffect(() => {
-        productDetail( setDetail)
+        productDetail(params.id, setDetail)
     }, [])
 
     return(

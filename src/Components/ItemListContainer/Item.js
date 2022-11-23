@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import '../../Styles/Item.css'
 import { allProducts } from "../Products"
+import { Link } from "react-router-dom"
 
 export function Item() {
 
@@ -14,6 +15,7 @@ export function Item() {
         {card == null ? <span className="loader"></span> : 
         card.map((productCard) => {
         return(
+            
             <div className="card" key={productCard.id}>
                 <div className="card2">
                     <div className="card-container">
@@ -21,10 +23,11 @@ export function Item() {
                         <h4 className="product-title">{productCard.title}</h4>
                         <p className="product-info">{productCard.description}</p>
                         <h5 className="product-price">Price: ${productCard.price}</h5>
-                        <button className="btn-buy">GET NOW</button>
+                        <Link to={`/itemdetail/${productCard.id}`}><button className="btn-buy">GET NOW</button></Link>
                     </div>
                 </div>
             </div>
+            
         )})}
     </> 
     )

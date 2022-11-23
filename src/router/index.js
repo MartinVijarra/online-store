@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom"
 import { App } from "../App"
-import { JewerlyProducts } from "../views/Jewerly"
 import { ItemDetailContainer } from "../Components/ItemDetailContainer/ItemDetailContainer"
-import { ItemListContainer } from "../Components/ItemListContainer/ItemListContainer"
+import { Electronics } from "../views/Electronics"
+import { Jewerly } from "../views/Jewerly"
+import { MensClothing } from "../views/MensClothing"
+import { WomensClothing } from "../views/WomensClothing"
 
 export const router = createBrowserRouter([
     {
@@ -10,12 +12,20 @@ export const router = createBrowserRouter([
         element: <App />
     },
     {
-        path: "/category/jewerly",
-        element: <JewerlyProducts />,
+        path: "/men'sclothing",
+        element: <MensClothing />
     },
     {
-        path: "/item/:id",
-        element: <ItemListContainer />
+        path: "/women'sclothing",
+        element: <WomensClothing />
+    },
+    {
+        path: "/electronics",
+        element: <Electronics />
+    },
+    {
+        path: "/jewerly",
+        element: <Jewerly />
     },
     {
         path: "/itemdetail/:id",

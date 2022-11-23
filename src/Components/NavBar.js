@@ -3,19 +3,20 @@ import { Link } from "react-router-dom"
 import '../Styles/NavBar.css';
 
 export function NavBar() {
+  console.log(Link);
     return (
       <header className="nav-container">
         <nav>
           <div className="border-box">
-            <h1 className="logo"> OnlineStore </h1>
+            <Link className="link" to="/"><h1 className="logo"> OnlineStore </h1></Link>
           </div>
 
           <div className="nav-list">
               <ul>
-                <Link to="/" className="btn-nav">Man</Link>
-                <Link to="/" className="btn-nav">Woman</Link>
-                <Link to="/" className="btn-nav">Jewerly</Link>
-                <Link to="/" className="btn-nav">Electronics</Link>
+                <Link to="/men'sclothing" className="btn-nav">Man</Link>
+                <Link to="/women'sclothing" className="btn-nav">Woman</Link>
+                <Link to="/electronics" className="btn-nav">Jewerly</Link>
+                <Link to="/jewerly" className="btn-nav">Electronics</Link>
               </ul>
           </div>
 
