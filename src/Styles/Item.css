@@ -82,6 +82,7 @@
 .btn-buy:active {
     transform: translateY(-2px);
     color: #fff;
+    background: linear-gradient(0.90turn, #f09819, #EDDE5D);
 }
 
 .loader {
