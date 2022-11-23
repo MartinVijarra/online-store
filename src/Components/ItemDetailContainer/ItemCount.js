@@ -1,5 +1,5 @@
 import { useState } from "react"
-import '../Styles/ItemCount.css'
+import '../../Styles/ItemCount.css'
 
 export function ItemCount() {
     const [count, setCount] = useState(0)
