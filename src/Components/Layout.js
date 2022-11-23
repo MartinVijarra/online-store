@@ -3,10 +3,12 @@ import { Footer } from "./Footer"
 
 export function Layout({ children }) {
     return(
+        <>
+        <NavBar />
         <main>
-            <NavBar />
             {children}
             <Footer />
         </main>
+        </>
     )
 }

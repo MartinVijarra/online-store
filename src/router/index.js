@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 import { App } from "../App"
-import { CategoryView } from "../views/Category"
+import { JewerlyProducts } from "../views/Jewerly"
 import { ItemDetailContainer } from "../Components/ItemDetailContainer/ItemDetailContainer"
 import { ItemListContainer } from "../Components/ItemListContainer/ItemListContainer"
 
@@ -10,8 +10,8 @@ export const router = createBrowserRouter([
         element: <App />
     },
     {
-        path: "/category/:id",
-        element: <CategoryView />,
+        path: "/category/jewerly",
+        element: <JewerlyProducts />,
     },
     {
         path: "/item/:id",
