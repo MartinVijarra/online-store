@@ -1,7 +1,6 @@
 import './App.css'
 import { ItemListContainer } from './Components/ItemListContainer/ItemListContainer';
 // import { ItemDetailContainer } from './Components/ItemDetailContainer/ItemDetailContainer';
-import { Footer } from './Components/Footer';
 import { Layout } from './Components/Layout';
 
 export function App() {
@@ -9,7 +8,6 @@ export function App() {
         <Layout>
             <ItemListContainer />
             {/* <ItemDetailContainer /> */}
-            <Footer />
         </Layout>
     )
 }

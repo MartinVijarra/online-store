@@ -1,16 +1,19 @@
 .count-wrap{
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
+    margin: 20px 0 0 0;
 }
 
 .counter{
-    width: 257px;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     border: 1px solid #EDDE5D;
     border-radius: 6px;
-    margin: 0 25px;
+    margin: 0 25px 0 0;
 }
 
 h5{
@@ -41,8 +44,11 @@ h5{
     background: linear-gradient(0.45turn, #EDDE5D, #f09819);
 }
 
+/*BOTON DE AGREGAR AL CARRITO*/
+
 .btn-agregar {
-    padding: 0 60px;
+    width: 50%;
+    height: 100%;
     font-size: 14px;
     letter-spacing: 2.5px;
     font-weight: 600;

@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom"
 import { App } from "../App"
 import { CategoryView } from "../views/Category"
-import { Item } from "../Components/ItemListContainer/Item"
 import { ItemDetailContainer } from "../Components/ItemDetailContainer/ItemDetailContainer"
+import { ItemListContainer } from "../Components/ItemListContainer/ItemListContainer"
 
 export const router = createBrowserRouter([
     {
@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "/item/:id",
-        element: <Item />
+        element: <ItemListContainer />
     },
     {
         path: "/itemdetail/:id",

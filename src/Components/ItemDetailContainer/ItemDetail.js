@@ -1,21 +1,40 @@
+import { useEffect, useState } from 'react';
 import { ItemCount } from './ItemCount';
-import { Layout } from '../Layout';
+import { productDetail } from '../Products';
 import '../../Styles/ItemDetail.css'
 
-export async function ItemDetail() {
+export function ItemDetail() {
+
+    const [detail, setDetail] = useState(null)
+    
+    useEffect(() => {
+        productDetail( setDetail)
+    }, [])
+
     return(
-        <Layout>
+        <>
+        {detail == null ? <span className="loader"></span> : 
             <div className='card-detail-container'>
                 <div className='card-detail'>
-                    <div className='card-img'>
-                        
+                    <div className='card-img'>             
+                        <img src={detail.image} alt={detail.title}/>
                     </div>
-                    
                     <div className='card-info'>
+                        <h4 className='title'>{detail.title}</h4>
+                        <p className='description'>{detail.description}</p>
+                        <h5 className='price'>Price: ${detail.price}</h5>
+                        <p>Size:</p>
+                        <div className='size-container'>
+                            <button className='size'>S</button>
+                            <button className='size'>M</button>
+                            <button className='size'>L</button>
+                            <button className='size'>XL</button>
+                        </div>
                         <ItemCount />
                     </div>
                 </div>
             </div>
-        </Layout>
+        }
+        </> 
     )
 }

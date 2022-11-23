@@ -1,4 +1,5 @@
 import { Carrito } from "./CartWidget"
+import { Link } from "react-router-dom"
 import '../Styles/NavBar.css';
 
 export function NavBar() {
@@ -11,10 +12,10 @@ export function NavBar() {
 
           <div className="nav-list">
               <ul>
-                <li className="btn-nav">Man</li>
-                <li className="btn-nav">Woman</li>
-                <li className="btn-nav">Jewerly</li>
-                <li className="btn-nav">Electronics</li>
+                <Link to="/" className="btn-nav">Man</Link>
+                <Link to="/" className="btn-nav">Woman</Link>
+                <Link to="/" className="btn-nav">Jewerly</Link>
+                <Link to="/" className="btn-nav">Electronics</Link>
               </ul>
           </div>
 
