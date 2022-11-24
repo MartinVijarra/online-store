@@ -1,6 +1,7 @@
 import { JewerlyProducts } from '../Components/Products';
 import { useEffect, useState } from 'react';
 import { Layout } from '../Components/Layout';
+import { Link } from 'react-router-dom';
 import "../Styles/ViewsStyle/Jewerly.css"
 
 export function Jewerly() {
@@ -24,7 +25,7 @@ export function Jewerly() {
                                         <h4 className="product-title">{productJewerly.title}</h4>
                                         <p className="product-info">{productJewerly.description}</p>
                                         <h5 className="product-price">Price: ${productJewerly.price}</h5>
-                                        <button className="btn-buy">GET NOW</button>
+                                        <Link to={`/itemdetail/${productJewerly.id}`}><button className="btn-buy">GET NOW</button></Link>
                                     </div>
                                 </div>
                             </div>

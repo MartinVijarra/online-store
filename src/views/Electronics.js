@@ -1,6 +1,7 @@
 import { ElectronicsProducts } from '../Components/Products';
 import { useEffect, useState } from 'react';
 import { Layout } from '../Components/Layout';
+import { Link } from 'react-router-dom';
 import "../Styles/ViewsStyle/Electronics.css"
 
 export function Electronics() {
@@ -24,7 +25,7 @@ export function Electronics() {
                               <h4 className="product-title">{productElectronics.title}</h4>
                               <p className="product-info">{productElectronics.description}</p>
                               <h5 className="product-price">Price: ${productElectronics.price}</h5>
-                              <button className="btn-buy">GET NOW</button>
+                              <Link to={`/itemdetail/${productElectronics.id}`}><button className="btn-buy">GET NOW</button></Link>
                             </div>
                         </div>
                     </div>
