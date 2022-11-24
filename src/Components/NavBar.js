@@ -15,8 +15,8 @@ export function NavBar() {
               <ul>
                 <Link to="/men'sclothing" className="btn-nav">Man</Link>
                 <Link to="/women'sclothing" className="btn-nav">Woman</Link>
-                <Link to="/electronics" className="btn-nav">Jewerly</Link>
-                <Link to="/jewerly" className="btn-nav">Electronics</Link>
+                <Link to="/jewerly" className="btn-nav">Jewerly</Link>
+                <Link to="/electronics" className="btn-nav">Electronics</Link>
               </ul>
           </div>
 
