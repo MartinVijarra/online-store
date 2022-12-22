@@ -14,8 +14,7 @@ export function Item() {
     <>
         {card == null ? <span className="loader"></span> : 
         card.map((productCard) => {
-        return(
-            
+        return(      
             <div className="card" key={productCard.id}>
                 <div className="card2">
                     <div className="card-container">

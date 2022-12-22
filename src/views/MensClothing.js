@@ -1,9 +1,10 @@
-import { Layout } from "../Components/Layout"
+import { useState, useEffect } from "react"
+import { allProducts } from "../Components/Products"
 
 export function MensClothing() {
-  return (
-    <Layout>
-        <div>MensClothing</div>
-    </Layout> 
-  )
+  useEffect(() => {
+    allProducts(setMensCloth)
+  }, [])
+  const [MensCloth, setMensCloth] = useState(null)
+
 }

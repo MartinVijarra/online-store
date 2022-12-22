@@ -5,6 +5,7 @@ import { Electronics } from "../views/Electronics"
 import { Jewerly } from "../views/Jewerly"
 import { MensClothing } from "../views/MensClothing"
 import { WomensClothing } from "../views/WomensClothing"
+import { Carrito } from "../Components/CartWidget"
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
     {
         path: "/itemdetail/:id",
         element: <ItemDetailContainer />
+    },
+    {
+        path: "/cart",
+        element: <Carrito />
     }
 ])
 

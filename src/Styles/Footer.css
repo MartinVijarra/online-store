@@ -2,6 +2,8 @@
     width: 100%;
     height: 30px;
     background: rgb(10, 10, 10);
+    position: fixed;
+    bottom: 0;
 }
 
 p{

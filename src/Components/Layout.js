@@ -7,8 +7,8 @@ export function Layout({ children }) {
         <NavBar />
         <main>
             {children}
-            <Footer />
         </main>
+        <Footer />
         </>
     )
 }
