@@ -4,8 +4,8 @@ import { ItemDetailContainer } from "../Components/ItemDetailContainer/ItemDetai
 import { Electronics } from "../views/Electronics"
 import { Jewerly } from "../views/Jewerly"
 import { MensClothing } from "../views/MensClothing"
-import { WomensClothing } from "../views/WomensClothing"
-import { Carrito } from "../Components/CartWidget"
+import { WomanClothing } from "../views/WomensClothing"
+import { CartProvider } from "../Context/cartContext"
 
 export const router = createBrowserRouter([
     {
@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "/women'sclothing",
-        element: <WomensClothing />
+        element: <WomanClothing />
     },
     {
         path: "/electronics",
@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "/cart",
-        element: <Carrito />
+        element: <CartProvider />
     }
 ])
 

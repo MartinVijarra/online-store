@@ -1,8 +1,8 @@
-import { ShoppingCartOutlined } from '@ant-design/icons';
-import '../Styles/CartWidget.css';
+// import { ShoppingCartOutlined } from '@ant-design/icons';
+// import '../Styles/CartWidget.css';
 
-export function Carrito() {
-    return(
-        <ShoppingCartOutlined className='cart'/>
-    )
-}
+// export function Cart() {
+//     return(
+//         <ShoppingCartOutlined className='cart'/>
+//     )
+// }

@@ -5,13 +5,36 @@ export async function allProducts (state) {
     state(getProducts.data)
 }
 
-export async function JewerlyProducts (state) {
-    const jewerlyData = await axios.get('https://fakestoreapi.com/products/category/jewelery')
-    state(jewerlyData.data)
+export function JewerlyProducts(state) {
+    axios.get('https://fakestoreapi.com/products')
+      .then(res => {
+        const products = res.data;
+        state(products.filter(product => product.category.includes("jewelery")))
+      });
 }
-export async function ElectronicsProducts (state) {
-    const electronicsData = await axios.get('https://fakestoreapi.com/products/category/electronics')
-    state(electronicsData.data)
+
+export function ElectronicsProducts(state) {
+    axios.get('https://fakestoreapi.com/products')
+      .then(res => {
+        const products = res.data;
+        state(products.filter(product => product.category.includes("electronics")))
+      });
+}
+
+export function Men(state) {
+    axios.get('https://fakestoreapi.com/products')
+      .then(res => {
+        const products = res.data;
+        state(products.filter(product => product.category.includes("men's clothing")))
+      });
+}
+
+export function Woman(state) {
+    axios.get('https://fakestoreapi.com/products')
+      .then(res => {
+        const products = res.data;
+        state(products.filter(product => product.category.includes("women's clothing")))
+      });
 }
 
 export async function productDetail(id, state) {
