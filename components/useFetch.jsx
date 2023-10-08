@@ -9,7 +9,7 @@ export default function useFetch(url) {
     fetch(url)
       .then((res) => res.json())
       .then((json) => setState(json))
-      .catch((error) => console.error("Error fetching data:", error))
+      .catch((error) => console.error("Error al cargar datos:", error))
       .finally(() => setLoading(false));
   }, []);
 
