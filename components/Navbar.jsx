@@ -8,10 +8,10 @@ export default function Navbar() {
         <div className="w-4/5 m-auto flex justify-between items-center">
             <Link href={"/"}>
                 <Image 
-                    src={'/logo.png'}
-                    width={200}
-                    height={100}
-                    alt="Logo"
+                  src={'/logo.png'}
+                  width={160}
+                  height={100}
+                  alt="Logo"
                 />
             </Link>
             <Navigation />

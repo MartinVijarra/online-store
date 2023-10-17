@@ -1,9 +1,9 @@
 import './globals.css'
-import { Roboto } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 
-const roboto = Roboto({
-  weight: ['100', '300', '400'],
+const opensans = Open_Sans({
+  weight: ['300', '400', '500', '800'],
   subsets: ['latin'],
   display: 'swap',
 })
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={roboto.className}>
+      <body className={opensans.className}>
         <Navbar />
         {children}
         </body>
