@@ -12,7 +12,7 @@ export default function Products() {
   const results = state.results;
 
   return (
-    <section className="w-full py-24 bg-gray-100">
+    <section className="w-full py-20 bg-gray-100">
 
       {/* Lista de productos y mapping de API */}
       <article className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
