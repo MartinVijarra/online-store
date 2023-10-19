@@ -41,9 +41,6 @@ export default function ItemDetail({ params }) {
           {/* Precio */}
           <p className="text-orange-400 font-bold text-xl text-center md:text-left">$ {state.price ? state.price : "Cargando..."}</p>
 
-          {/* Descripcion */}
-          <p className="text-gray-700 text-sm text-center lg:text-left">{description.plain_text ? description.plain_text : "Cargando..."}</p>
-
           {/* Control de stock y contador de items */}
 
           <div>
@@ -61,6 +58,10 @@ export default function ItemDetail({ params }) {
               </div>
             </div>
           </div>
+
+          {/* Descripcion */}
+          <p className="text-gray-700 text-sm text-center lg:text-left">{description.plain_text ? description.plain_text : "Cargando..."}</p>
+
         </div>
       </article>
     </section>
